@@ -82,8 +82,44 @@ export function Terms() {
             MIT licence
           </a>
           . That licence lets you use, copy, change and share the code, and it is also the source of the
-          "as is" wording above. It is the only licence that applies to {PRODUCT.name}.
+          "as is" wording above. MIT covers {PRODUCT.name}'s own code only; third-party assets carry
+          their own licences.
         </p>
+
+        <h2>Third-party assets</h2>
+        <p>
+          {PRODUCT.name} bundles the following third-party assets under their own licences:
+        </p>
+        <ul>
+          <li>
+            <strong>Twemoji</strong> (emoji graphics) — CC-BY 4.0 by Twitter, Inc. and other
+            contributors. See <a href="https://github.com/twitter/twemoji" rel="noopener noreferrer" target="_blank">twemoji</a> and
+            <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener noreferrer" target="_blank">CC-BY 4.0</a>. Attribution is in{" "}
+            <a href="/emojis/NOTICE.txt">public/emojis/NOTICE.txt</a> and{" "}
+            <code className="inline">src/emojis.ts</code>.
+          </li>
+          <li>
+            <strong>Fonts</strong> — bundled through {@link PRODUCT.libraries.reader.name} and
+            {@link PRODUCT.libraries.writer.name} dependencies; each font package carries its own
+            licence (mostly SIL Open Font Licence). See the font packages in{" "}
+            <code className="inline">package.json</code>.
+          </li>
+          <li>
+            <strong>{PRODUCT.libraries.reader.name}</strong> — PDF parsing and rendering in a web
+            worker. See{" "}
+            <a href={PRODUCT.libraries.reader.url} rel="noopener noreferrer" target="_blank">
+              {PRODUCT.libraries.reader.url}
+            </a>
+            .
+          </li>
+          <li>
+            <strong>{PRODUCT.libraries.writer.name}</strong> — PDF writing in the same tab. See{" "}
+            <a href={PRODUCT.libraries.writer.url} rel="noopener noreferrer" target="_blank">
+              {PRODUCT.libraries.writer.url}
+            </a>
+            .
+          </li>
+        </ul>
 
         <h2>No account, nothing collected</h2>
         <p>
