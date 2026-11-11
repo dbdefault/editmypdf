@@ -88,39 +88,45 @@ export function Terms() {
 
         <h2>Third-party assets</h2>
         <p>
-          {PRODUCT.name} bundles the following third-party assets under their own licences:
+          The MIT licence above covers {PRODUCT.name}'s own code. {PRODUCT.name} also bundles the
+          following third-party assets, each under its own licence:
         </p>
         <ul>
           <li>
-            <strong>Twemoji</strong> (emoji graphics) — CC-BY 4.0 by Twitter, Inc. and other
-            contributors. See <a href="https://github.com/twitter/twemoji" rel="noopener noreferrer" target="_blank">twemoji</a> and
-            <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener noreferrer" target="_blank">CC-BY 4.0</a>. Attribution is in{" "}
-            <a href="/emojis/NOTICE.txt">public/emojis/NOTICE.txt</a> and{" "}
-            <code className="inline">src/emojis.ts</code>.
+            <strong>Twemoji</strong> emoji graphics: copyright Twitter, Inc. and other contributors,
+            licensed under{" "}
+            <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener noreferrer" target="_blank">
+              CC-BY 4.0
+            </a>
+            . Source:{" "}
+            <a href="https://github.com/twitter/twemoji" rel="noopener noreferrer" target="_blank">
+              github.com/twitter/twemoji
+            </a>
+            .
           </li>
           <li>
-            <strong>Fonts</strong> — bundled through {@link PRODUCT.libraries.reader.name} and
-            {@link PRODUCT.libraries.writer.name} dependencies; each font package carries its own
-            licence (mostly SIL Open Font Licence). See the font packages in{" "}
-            <code className="inline">package.json</code>.
+            <strong>Fonts</strong> from the <code>@fontsource</code> packages: Alex Brush, Allura, Amita,
+            Arimo, Caladea, Carlito, Cousine, Dancing Script, Dekko, Gelasio, Geist, Geist Mono, Great
+            Vibes, Inter, Instrument Serif, Kalam, Lato, Noto Sans, Noto Sans Mono, Noto Serif, Open Sans,
+            Pinyon Script, Roboto, Sacramento, Tangerine and Tinos. All of them are licensed under the SIL
+            Open Font License 1.1 (OFL-1.1).
           </li>
           <li>
-            <strong>{PRODUCT.libraries.reader.name}</strong> — PDF parsing and rendering in a web
-            worker. See{" "}
+            <strong>{PRODUCT.libraries.reader.name}</strong> (PDF parsing and rendering), licensed under
+            Apache-2.0:{" "}
             <a href={PRODUCT.libraries.reader.url} rel="noopener noreferrer" target="_blank">
               {PRODUCT.libraries.reader.url}
             </a>
             .
           </li>
           <li>
-            <strong>{PRODUCT.libraries.writer.name}</strong> — PDF writing in the same tab. See{" "}
+            <strong>{PRODUCT.libraries.writer.name}</strong> (writing the edited PDF), licensed under MIT:{" "}
             <a href={PRODUCT.libraries.writer.url} rel="noopener noreferrer" target="_blank">
               {PRODUCT.libraries.writer.url}
             </a>
             .
           </li>
         </ul>
-
         <h2>No account, nothing collected</h2>
         <p>
           There is nothing to sign up for.{" "}
